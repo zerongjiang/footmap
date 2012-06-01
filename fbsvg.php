@@ -14,8 +14,6 @@
 		$svgbgcolor = $_POST["svgbgcolor"];
 		$msg	    = $_POST["msg"];
 
-
-
 	function renderMsg($msg,$x,$y,$angle,$im){
 		$im_msg = new ImagickDraw();
 		$im_msg->setFont( 'res/STHeiti-Light.ttc');
@@ -84,7 +82,7 @@
         $imborder->compositeImage($bg,Imagick::COMPOSITE_DEFAULT,10,6);
         $imborder->setImageFormat( 'png' );
 
-	$filepath = "footmap/wb$uid";
+	$filepath = "footmap/fb$uid";
         $filename = "$filepath/".time().".png";
         if(!file_exists($filepath)){
                 mkdir($filepath,0755,true);
