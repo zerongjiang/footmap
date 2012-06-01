@@ -245,7 +245,7 @@ a{
 }
 
 svg{
-	background: url(../svgshadow.png) no-repeat 0 0;
+	background: url(../res/svgshadow.png) no-repeat 0 0;
 }
 
 #msg{
